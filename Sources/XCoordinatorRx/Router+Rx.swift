@@ -11,8 +11,7 @@
 import XCoordinator
 import RxSwift
 
-public struct ReactiveRouter<RouteType: Route> {
-
+public class ReactiveRouter<RouteType: Route> {
     // MARK: Stored Properties
 
     fileprivate let base: any Router<RouteType>
@@ -22,21 +21,17 @@ public struct ReactiveRouter<RouteType: Route> {
     fileprivate init(_ base: any Router<RouteType>) {
         self.base = base
     }
-
 }
 
 extension Router {
-
     /// Use this to access the reactive extensions of `Router` objects.
     public var rx: ReactiveRouter<RouteType> {
         // swiftlint:disable:previous identifier_name
         ReactiveRouter(self)
     }
-
 }
 
 extension ReactiveRouter {
-
     // MARK: Convenience methods
 
     ///
@@ -60,7 +55,17 @@ extension ReactiveRouter {
         }
     }
 
-}
+    public func trigger() -> Binder<RouteType> {
+        .init(self) { target, route in
+            target.base.trigger(route)
+        }
+    }
 
+    public func trigger(_ route: RouteType) -> Binder<Void> {
+        .init(self) { target, _ in
+            target.base.trigger(route)
+        }
+    }
+}
 
 #endif

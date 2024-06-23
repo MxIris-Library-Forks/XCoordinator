@@ -111,6 +111,8 @@ open class BaseCoordinator<RouteType: Route, TransitionType: TransitionProtocol>
         }
     }
     
+    open func completeTransition(for route: RouteType) {}
+    
     public func registerParent(_ presentable: any Presentable & AnyObject) {
         let previous = removeParentChildren
         removeParentChildren = { [weak presentable] in

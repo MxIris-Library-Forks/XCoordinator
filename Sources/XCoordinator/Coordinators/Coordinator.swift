@@ -34,6 +34,8 @@ public protocol Coordinator<RouteType, TransitionType>: Router, TransitionPerfor
     ///
     func prepareTransition(for route: RouteType) -> TransitionType
     
+    func completeTransition(for route: RouteType)
+    
     ///
     /// This method adds a child to a coordinator's children.
     ///
@@ -86,7 +88,10 @@ extension Coordinator where Self: AnyObject {
                                with options: TransitionOptions,
                                completion: ContextPresentationHandler?) {
         let transition = prepareTransition(for: route)
-        performTransition(transition, with: options) { completion?(transition) }
+        performTransition(transition, with: options) { [weak self] in
+            completion?(transition)
+            self?.completeTransition(for: route)
+        }
     }
 
     ///

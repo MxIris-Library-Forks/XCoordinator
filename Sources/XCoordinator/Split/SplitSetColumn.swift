@@ -7,7 +7,7 @@
 
 import UIKit
 
-@available(iOS 14, *)
+@available(iOS 14, tvOS 14, *)
 public struct SplitSetColumn<RootViewController> {
 
     // MARK: Stored Properties
@@ -24,7 +24,7 @@ public struct SplitSetColumn<RootViewController> {
 
 }
 
-@available(iOS 14, *)
+@available(iOS 14, tvOS 14, *)
 extension SplitSetColumn: TransitionComponent where RootViewController: UISplitViewController {
 
     public func build() -> Transition<RootViewController> {

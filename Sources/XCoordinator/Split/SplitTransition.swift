@@ -23,7 +23,7 @@ extension Transition where RootViewController: UISplitViewController {
         }
     }
 
-    @available(iOS 14, *)
+    @available(iOS 14, tvOS 14, *)
     public static func set(_ presentable: (any Presentable)?, for column: UISplitViewController.Column) -> Transition {
         Transition {
             SplitSetColumn(column) {

@@ -42,13 +42,13 @@ extension TabBarAnimationDelegate: UITabBarControllerDelegate {
     ///     If the animationController is a `TransitionAnimation`, it returns its interactionController.
     ///     Otherwise it requests an interactionController from the TabBarCoordinator's delegate.
     ///
+    #if !os(visionOS)
     open func tabBarController(_ tabBarController: UITabBarController,
                                interactionControllerFor animationController: UIViewControllerAnimatedTransitioning
         ) -> UIViewControllerInteractiveTransitioning? {
         (animationController as? TransitionAnimation)?.interactionController
             ?? delegate?.tabBarController?(tabBarController, interactionControllerFor: animationController)
     }
-
     ///
     /// See [UITabBarControllerDelegate](https://developer.apple.com/documentation/uikit/UITabBarControllerDelegate)
     /// for further reference.
@@ -68,7 +68,8 @@ extension TabBarAnimationDelegate: UITabBarControllerDelegate {
         toVC.transitioningDelegate?.animationController?(forPresented: toVC, presenting: tabBarController, source: fromVC)
             ?? delegate?.tabBarController?(tabBarController, animationControllerForTransitionFrom: fromVC, to: toVC)
     }
-
+    
+    #endif
     ///
     /// See [UITabBarControllerDelegate](https://developer.apple.com/documentation/uikit/UITabBarControllerDelegate)
     /// for further reference.
@@ -102,7 +103,7 @@ extension TabBarAnimationDelegate: UITabBarControllerDelegate {
         delegate?.tabBarController?(tabBarController, shouldSelect: viewController) ?? true
     }
 
-    #if !os(tvOS)
+    #if !os(tvOS) && !os(visionOS)
 
     ///
     /// See [UITabBarControllerDelegate](https://developer.apple.com/documentation/uikit/UITabBarControllerDelegate)

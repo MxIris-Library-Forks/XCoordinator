@@ -29,7 +29,11 @@ open class NavigationAnimationDelegate: NSObject {
     // MARK: Stored properties
 
     /// The velocity threshold needed for the interactive pop transition to succeed
+    #if os(visionOS)
+    open var velocityThreshold: CGFloat { (UIApplication.shared.firstWindowScene?.coordinateSpace.bounds.width ?? 0) / 2 }
+    #else
     open var velocityThreshold: CGFloat { UIScreen.main.bounds.width / 2 }
+    #endif
 
     /// The transition progress threshold for the interactive pop transition to succeed
     open var transitionProgressThreshold: CGFloat { 0.5 }
@@ -280,5 +284,11 @@ extension NavigationAnimationDelegate: UIGestureRecognizerDelegate {
 extension UINavigationController {
     internal var animationDelegate: NavigationAnimationDelegate? {
         delegate as? NavigationAnimationDelegate
+    }
+}
+
+extension UIApplication {
+    var firstWindowScene: UIWindowScene? {
+        connectedScenes.compactMap { $0 as? UIWindowScene }.first
     }
 }

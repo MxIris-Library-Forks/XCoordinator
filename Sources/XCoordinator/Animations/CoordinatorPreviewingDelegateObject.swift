@@ -32,7 +32,7 @@ NSObject, UIViewControllerPreviewingDelegate {
     }
 
     // MARK: Methods
-
+    #if !os(visionOS)
     internal func previewingContext(_ previewingContext: UIViewControllerPreviewing,
                                     viewControllerForLocation location: CGPoint) -> UIViewController? {
 
@@ -50,4 +50,5 @@ NSObject, UIViewControllerPreviewingDelegate {
                                     commit viewControllerToCommit: UIViewController) {
         transition().perform(on: rootViewController, with: .default, completion: completion)
     }
+    #endif
 }

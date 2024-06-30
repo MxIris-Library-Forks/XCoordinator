@@ -7,6 +7,8 @@
 
 import UIKit
 
+#if !os(visionOS)
+
 @available(iOS, introduced: 9.0, deprecated: 13.0, message: "Use `UIContextMenuInteraction` instead.")
 public struct RegisterPeek<RootViewController, CoordinatorType: Coordinator> where CoordinatorType.TransitionType == Transition<RootViewController> {
 
@@ -49,3 +51,5 @@ extension RegisterPeek: TransitionComponent where RootViewController: UIViewCont
     }
 
 }
+
+#endif

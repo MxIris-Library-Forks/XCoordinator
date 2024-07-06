@@ -6,7 +6,7 @@
 //  Copyright © 2018 QuickBird Studios. All rights reserved.
 //
 
-#if canImport(XCoordinator) && canImport(RxSwift)
+#if canImport(XCoordinator) && canImport(RxSwift) && canImport(UIKit)
 
 import XCoordinator
 import RxSwift

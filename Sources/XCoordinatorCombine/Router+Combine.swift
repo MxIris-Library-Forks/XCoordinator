@@ -6,7 +6,7 @@
 //  Copyright © 2018 QuickBird Studios. All rights reserved.
 //
 
-#if canImport(Combine) && canImport(XCoordinator)
+#if canImport(Combine) && canImport(XCoordinator) && canImport(UIKit)
 
 import Combine
 import XCoordinator

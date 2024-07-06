@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -40,3 +42,6 @@ extension Dismiss: TransitionComponent where RootViewController: UIViewControlle
     }
 
 }
+
+
+#endif

@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  TabBarAnimationDelegate.swift
 //  XCoordinator
@@ -159,3 +161,6 @@ extension UITabBarController {
         delegate as? TabBarAnimationDelegate
     }
 }
+
+
+#endif

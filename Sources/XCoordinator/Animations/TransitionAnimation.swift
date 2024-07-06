@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  TransitionAnimation.swift
 //  XCoordinator
@@ -68,3 +70,6 @@ public protocol PercentDrivenInteractionController: UIViewControllerInteractiveT
 }
 
 extension UIPercentDrivenInteractiveTransition: PercentDrivenInteractionController {}
+
+
+#endif

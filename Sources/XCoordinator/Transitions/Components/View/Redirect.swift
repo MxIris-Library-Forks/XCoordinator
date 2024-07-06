@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -35,3 +37,6 @@ extension Redirect: TransitionComponent where RootViewController: UIViewControll
     }
 
 }
+
+
+#endif

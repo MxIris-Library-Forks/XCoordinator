@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  RouteTrigger.swift
 //  XCoordinator
@@ -138,5 +140,8 @@ extension Router {
     }
 
 }
+
+#endif
+
 
 #endif

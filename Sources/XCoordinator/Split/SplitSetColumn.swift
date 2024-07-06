@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -43,3 +45,6 @@ extension SplitSetColumn: TransitionComponent where RootViewController: UISplitV
     }
 
 }
+
+
+#endif

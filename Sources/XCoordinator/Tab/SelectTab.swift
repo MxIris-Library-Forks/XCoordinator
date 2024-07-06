@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -88,3 +90,6 @@ extension SelectTab: TransitionComponent where RootViewController: UITabBarContr
     }
 
 }
+
+
+#endif

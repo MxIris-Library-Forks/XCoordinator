@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  StaticTransitionAnimation.swift
 //  XCoordinator
@@ -83,3 +85,6 @@ open class StaticTransitionAnimation: NSObject, TransitionAnimation {
     open func cleanup() {}
 
 }
+
+
+#endif

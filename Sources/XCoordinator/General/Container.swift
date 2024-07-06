@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  Container.swift
 //  XCoordinator
@@ -60,3 +62,6 @@ extension UIView {
         return nil
     }
 }
+
+
+#endif

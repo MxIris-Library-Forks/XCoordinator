@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -53,3 +55,6 @@ extension SetTabs: TransitionComponent where RootViewController: UITabBarControl
     }
 
 }
+
+
+#endif

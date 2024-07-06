@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  NavigationCoordinator.swift
 //  XCoordinator
@@ -75,3 +77,6 @@ open class NavigationCoordinator<RouteType: Route>: BaseCoordinator<RouteType, N
     }
 
 }
+
+
+#endif

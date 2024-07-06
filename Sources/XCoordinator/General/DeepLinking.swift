@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  DeepLinking.swift
 //  XCoordinator
@@ -140,3 +142,6 @@ extension Route {
         }
     }
 }
+
+
+#endif

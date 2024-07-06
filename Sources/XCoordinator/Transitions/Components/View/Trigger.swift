@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -32,3 +34,6 @@ extension Trigger: TransitionComponent where RootViewController: UIViewControlle
     }
 
 }
+
+
+#endif

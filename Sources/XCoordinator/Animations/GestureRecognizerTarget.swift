@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  GestureRecognizerTarget.swift
 //  XCoordinator
@@ -35,3 +37,6 @@ internal class Target<GestureRecognizer: UIGestureRecognizer>: GestureRecognizer
     }
 
 }
+
+
+#endif

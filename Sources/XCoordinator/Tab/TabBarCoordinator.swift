@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  TabBarCoordinator.swift
 //  XCoordinator
@@ -100,3 +102,6 @@ open class TabBarCoordinator<RouteType: Route>: BaseCoordinator<RouteType, TabBa
     }
 
 }
+
+
+#endif

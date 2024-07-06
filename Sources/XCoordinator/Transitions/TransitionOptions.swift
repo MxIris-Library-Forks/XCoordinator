@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  TransitionOptions.swift
 //  XCoordinator
@@ -44,3 +46,6 @@ public struct TransitionOptions {
     }
 
 }
+
+
+#endif

@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  RedirectionRouter.swift
 //  XCoordinator
@@ -93,3 +95,6 @@ open class RedirectionRouter<ParentRoute: Route, RouteType: Route>: Router {
         return map(route)
     }
 }
+
+
+#endif

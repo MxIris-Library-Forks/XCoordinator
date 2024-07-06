@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -37,3 +39,6 @@ extension PageSetInitial: TransitionComponent where RootViewController: UIPageVi
     }
 
 }
+
+
+#endif

@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  InterruptibleTransitionAnimation.swift
 //  XCoordinator
@@ -121,3 +123,6 @@ open class InterruptibleTransitionAnimation: InteractiveTransitionAnimation {
         _interruptibleAnimator ?? generateInterruptibleAnimator(using: transitionContext)
     }
 }
+
+
+#endif

@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  Transition.swift
 //  XCoordinator
@@ -114,3 +116,6 @@ public struct Transition<RootViewController: UIViewController>: TransitionProtoc
 
 }
  
+
+
+#endif

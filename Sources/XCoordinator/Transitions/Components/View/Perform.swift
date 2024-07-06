@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -36,3 +38,6 @@ extension Perform: TransitionComponent where RootViewController: UIViewControlle
     }
 
 }
+
+
+#endif

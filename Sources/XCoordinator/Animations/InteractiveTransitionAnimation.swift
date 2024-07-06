@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  InteractiveTransitionAnimation.swift
 //  XCoordinator
@@ -173,3 +175,6 @@ open class InteractiveTransitionAnimation: NSObject, TransitionAnimation { // sw
         _interactionController = nil
     }
 }
+
+
+#endif

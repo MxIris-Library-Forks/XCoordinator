@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  Route.swift
 //  XCoordinator
@@ -16,3 +18,6 @@ import UIKit
 ///     navigation code type safe.
 ///
 public protocol Route {}
+
+
+#endif

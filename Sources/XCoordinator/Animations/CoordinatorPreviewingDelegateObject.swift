@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  CoordinatorPreviewingDelegateObject.swift
 //  XCoordinator
@@ -52,3 +54,6 @@ NSObject, UIViewControllerPreviewingDelegate {
     }
     #endif
 }
+
+
+#endif

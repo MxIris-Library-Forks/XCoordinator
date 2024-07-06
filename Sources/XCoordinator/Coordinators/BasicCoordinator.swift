@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  BasicCoordinator.swift
 //  XCoordinator
@@ -103,3 +105,6 @@ open class BasicCoordinator<RouteType: Route, TransitionType: TransitionProtocol
         }
     }
 }
+
+
+#endif

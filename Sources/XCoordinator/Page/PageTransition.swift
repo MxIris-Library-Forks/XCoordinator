@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  PageViewTransition.swift
 //  XCoordinator
@@ -48,3 +50,6 @@ extension Transition where RootViewController: UIPageViewController {
     }
 
 }
+
+
+#endif

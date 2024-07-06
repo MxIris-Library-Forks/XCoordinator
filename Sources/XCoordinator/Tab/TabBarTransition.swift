@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  TabBarTransition.swift
 //  XCoordinator
@@ -74,3 +76,6 @@ extension Transition where RootViewController: UITabBarController {
     }
 
 }
+
+
+#endif

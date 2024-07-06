@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  SplitCoordinator.swift
 //  XCoordinator
@@ -40,3 +42,6 @@ open class SplitCoordinator<RouteType: Route>: BaseCoordinator<RouteType, SplitT
     }
 
 }
+
+
+#endif

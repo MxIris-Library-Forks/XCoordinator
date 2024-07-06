@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  NavigationTransition.swift
 //  XCoordinator
@@ -105,3 +107,6 @@ extension Transition where RootViewController: UINavigationController {
         }
     }
 }
+
+
+#endif

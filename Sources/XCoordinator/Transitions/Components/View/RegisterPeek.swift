@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -51,5 +53,8 @@ extension RegisterPeek: TransitionComponent where RootViewController: UIViewCont
     }
 
 }
+
+#endif
+
 
 #endif

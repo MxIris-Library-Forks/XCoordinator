@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  NavigationAnimationDelegate.swift
 //  XCoordinator
@@ -292,3 +294,6 @@ extension UIApplication {
         connectedScenes.compactMap { $0 as? UIWindowScene }.first
     }
 }
+
+
+#endif

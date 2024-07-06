@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -58,3 +60,6 @@ extension Push: TransitionComponent where RootViewController: UINavigationContro
     }
 
 }
+
+
+#endif

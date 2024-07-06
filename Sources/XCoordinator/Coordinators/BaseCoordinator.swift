@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  BaseCoordinator.swift
 //  XCoordinator
@@ -305,3 +307,6 @@ extension BaseCoordinator {
     }
 
 }
+
+
+#endif

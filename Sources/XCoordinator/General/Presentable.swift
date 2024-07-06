@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  Presentable.swift
 //  XCoordinator
@@ -115,3 +117,6 @@ extension UIWindow: Presentable {
         nil
     }
 }
+
+
+#endif

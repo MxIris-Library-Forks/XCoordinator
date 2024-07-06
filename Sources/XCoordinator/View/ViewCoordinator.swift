@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  ViewCoordinator.swift
 //  XCoordinator
@@ -25,3 +27,6 @@ open class ViewCoordinator<RouteType: Route>: BaseCoordinator<RouteType, ViewTra
     }
 
 }
+
+
+#endif

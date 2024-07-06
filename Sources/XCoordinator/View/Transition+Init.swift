@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  Transition+Init.swift
 //  XCoordinator
@@ -209,3 +211,6 @@ extension Transition {
     }
 
 }
+
+
+#endif

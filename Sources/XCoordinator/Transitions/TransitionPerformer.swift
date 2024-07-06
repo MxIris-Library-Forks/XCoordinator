@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  TransitionPerformer.swift
 //  XCoordinator
@@ -35,3 +37,6 @@ public protocol TransitionPerformer<TransitionType>: Presentable {
                            completion: PresentationHandler?)
 
 }
+
+
+#endif

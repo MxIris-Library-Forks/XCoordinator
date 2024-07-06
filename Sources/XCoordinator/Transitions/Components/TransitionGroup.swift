@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -30,3 +32,6 @@ public struct TransitionGroup<RootViewController: UIViewController>: TransitionC
     }
 
 }
+
+
+#endif

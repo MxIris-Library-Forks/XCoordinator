@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  Coordinator.swift
 //  XCoordinator
@@ -117,3 +119,6 @@ extension Coordinator where Self: AnyObject {
         }
     }
 }
+
+
+#endif

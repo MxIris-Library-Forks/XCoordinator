@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -22,3 +24,6 @@ extension Transition {
     }
 
 }
+
+
+#endif

@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  UISplitViewController+Transition.swift
 //  XCoordinator
@@ -37,3 +39,6 @@ extension Transition where RootViewController: UISplitViewController {
 
 
 
+
+
+#endif

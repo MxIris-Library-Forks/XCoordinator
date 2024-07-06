@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  PageCoordinator.swift
 //  XCoordinator
@@ -137,3 +139,6 @@ open class PageCoordinator<RouteType: Route>: BaseCoordinator<RouteType, PageTra
     }
 
 }
+
+
+#endif

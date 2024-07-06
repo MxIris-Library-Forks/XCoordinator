@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -42,3 +44,6 @@ extension ShowDetail: TransitionComponent where RootViewController: UIViewContro
     }
 
 }
+
+
+#endif

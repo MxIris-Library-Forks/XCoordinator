@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -54,3 +56,6 @@ extension Embed: TransitionComponent where RootViewController: UIViewController 
     }
 
 }
+
+
+#endif

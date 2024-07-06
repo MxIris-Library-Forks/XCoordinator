@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  PageCoordinatorDataSource.swift
 //  XCoordinator
@@ -132,3 +134,6 @@ open class PageCoordinatorDataSource: NSObject, UIPageViewControllerDataSource {
         return pages[nextIndex].viewController
     }
 }
+
+
+#endif

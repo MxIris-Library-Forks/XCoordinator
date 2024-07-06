@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -86,3 +88,6 @@ extension Pop: TransitionComponent where RootViewController: UINavigationControl
     }
 
 }
+
+
+#endif

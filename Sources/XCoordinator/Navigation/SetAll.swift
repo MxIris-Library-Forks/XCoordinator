@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -59,3 +61,6 @@ extension SetAll: TransitionComponent where RootViewController: UINavigationCont
     }
 
 }
+
+
+#endif

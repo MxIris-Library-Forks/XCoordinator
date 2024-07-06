@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  Animation.swift
 //  XCoordinator
@@ -122,3 +124,6 @@ extension Animation: UIViewControllerTransitioningDelegate {
     }
 
 }
+
+
+#endif

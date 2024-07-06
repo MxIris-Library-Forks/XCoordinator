@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  TransitionProtocol.swift
 //  XCoordinator
@@ -66,3 +68,6 @@ extension TransitionProtocol {
     }
 
 }
+
+
+#endif

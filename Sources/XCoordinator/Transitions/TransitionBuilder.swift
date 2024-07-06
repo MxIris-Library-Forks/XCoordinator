@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -52,3 +54,6 @@ public enum TransitionBuilder<RootViewController: UIViewController> {
 
 }
 
+
+
+#endif

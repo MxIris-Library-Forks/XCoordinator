@@ -1,3 +1,5 @@
+#if canImport(UIKit)
+
 //
 //  File.swift
 //  
@@ -14,3 +16,6 @@ extension UIViewController {
     }
 
 }
+
+
+#endif

@@ -11,6 +11,7 @@
 import XCoordinator
 import RxSwift
 
+@MainActor
 public class ReactiveRouter<RouteType: Route> {
     // MARK: Stored Properties
 

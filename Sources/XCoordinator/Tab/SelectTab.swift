@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct SelectTab<RootViewController> {
 
     // MARK: Stored Properties

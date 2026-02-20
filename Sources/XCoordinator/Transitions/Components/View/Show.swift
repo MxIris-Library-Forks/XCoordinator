@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct Show<RootViewController> {
 
     // MARK: Stored Properties

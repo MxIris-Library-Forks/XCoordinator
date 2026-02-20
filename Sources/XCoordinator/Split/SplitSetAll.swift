@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct SplitSetAll<RootViewController> {
 
     // MARK: Stored Properties

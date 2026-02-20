@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct PageSet<RootViewController> {
 
     // MARK: Stored Properties

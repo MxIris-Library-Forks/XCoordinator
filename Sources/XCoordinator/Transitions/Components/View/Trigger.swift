@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct Trigger<RootViewController, RouteType: Route> {
 
     // MARK: Stored Properties

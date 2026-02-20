@@ -22,6 +22,7 @@ public typealias ContextPresentationHandler = (any TransitionProtocol) -> Void
 /// It requires an object to be able to trigger routes and perform transitions.
 /// This connection is created using the `prepareTransition(for:)` method.
 ///
+@MainActor
 public protocol Coordinator<RouteType, TransitionType>: Router, TransitionPerformer {
 
     ///

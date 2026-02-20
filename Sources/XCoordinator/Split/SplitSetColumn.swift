@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 @available(iOS 14, tvOS 14, *)
 public struct SplitSetColumn<RootViewController> {
 

@@ -10,6 +10,7 @@
 
 import UIKit
 
+@MainActor
 extension Transition {
 
     ///

@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct Redirect<RootViewController, CoordinatorType: Coordinator> {
 
     // MARK: Stored Properties

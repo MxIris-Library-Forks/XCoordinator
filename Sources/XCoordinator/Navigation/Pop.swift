@@ -9,6 +9,7 @@
 
 import SwiftUI
 
+@MainActor
 public struct Pop<RootViewController> {
 
     // MARK: Stored Properties

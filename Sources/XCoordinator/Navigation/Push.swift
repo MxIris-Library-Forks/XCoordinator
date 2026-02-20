@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct Push<RootViewController> {
 
     // MARK: Stored Properties

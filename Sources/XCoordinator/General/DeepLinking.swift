@@ -10,6 +10,7 @@
 
 import UIKit
 
+@MainActor
 public struct DeepLink<RootViewController, CoordinatorType: Coordinator> {
 
     private let coordinator: CoordinatorType
@@ -86,6 +87,7 @@ extension Coordinator where Self: AnyObject {
 
 // MARK: - Transition + DeepLink
 
+@MainActor
 extension Transition {
     fileprivate static func deepLink<C: Coordinator & AnyObject>(with coordinator: C,
                                                                  _ route: C.RouteType,
@@ -106,6 +108,7 @@ extension Transition {
 
 // MARK: - Route + DeepLink
 
+@MainActor
 extension Route {
     private func router(fromStack stack: inout [Presentable]) -> (any Router<Self>)? {
         while !stack.isEmpty {

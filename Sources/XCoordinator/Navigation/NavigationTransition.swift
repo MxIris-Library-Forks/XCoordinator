@@ -14,6 +14,7 @@ import UIKit
 /// with a `UINavigationController` as rootViewController.
 public typealias NavigationTransition = Transition<UINavigationController>
 
+@MainActor
 extension Transition where RootViewController: UINavigationController {
 
     ///

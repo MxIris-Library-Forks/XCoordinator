@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct Embed<RootViewController> {
 
     // MARK: Stored Properties

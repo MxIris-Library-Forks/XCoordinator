@@ -14,6 +14,7 @@ import UIKit
 /// with a `UITabBarController` rootViewController.
 public typealias TabBarTransition = Transition<UITabBarController>
 
+@MainActor
 extension Transition where RootViewController: UITabBarController {
 
     ///

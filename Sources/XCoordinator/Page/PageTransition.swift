@@ -14,6 +14,7 @@ import UIKit
 /// with a `UIPageViewController` rootViewController.
 public typealias PageTransition = Transition<UIPageViewController>
 
+@MainActor
 extension Transition where RootViewController: UIPageViewController {
 
     ///

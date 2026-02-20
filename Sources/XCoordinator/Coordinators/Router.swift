@@ -19,6 +19,7 @@ import Foundation
 /// the triggering of routes.
 /// This may especially be useful in viewModels when using them in different contexts.
 ///
+@MainActor
 public protocol Router<RouteType>: Presentable, AnyObject {
 
     /// RouteType defines which routes can be triggered in a certain Router implementation.

@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public struct TransitionGroup<RootViewController: UIViewController>: TransitionComponent {
 
     // MARK: Stored Properties

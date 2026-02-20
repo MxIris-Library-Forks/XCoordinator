@@ -15,6 +15,7 @@ import UIKit
 ///
 public typealias SplitTransition = Transition<UISplitViewController>
 
+@MainActor
 extension Transition where RootViewController: UISplitViewController {
 
     public static func set(_ presentables: [any Presentable]) -> Transition {

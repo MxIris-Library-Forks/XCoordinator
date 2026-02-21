@@ -9,6 +9,7 @@
 
 import UIKit
 
+@MainActor
 public protocol TransitionComponent<RootViewController> {
 
     associatedtype RootViewController: UIViewController
